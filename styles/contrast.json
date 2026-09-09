@@ -1,0 +1,14 @@
+{
+  "name": "Contrast",
+  "description": "Clear high-contrast preset",
+  "tokens": {
+    "font": "Inter, system-ui, sans-serif",
+    "background": "#f3f4f6",
+    "surface": "#ffffff",
+    "text": "#101114",
+    "muted": "#4d515b",
+    "accent": "#111827",
+    "radius": "8px",
+    "spacing": "14px"
+  }
+}
