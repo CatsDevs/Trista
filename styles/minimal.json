@@ -1,0 +1,14 @@
+{
+  "name": "Minimal",
+  "description": "Clean neutral preset",
+  "tokens": {
+    "font": "Inter, system-ui, sans-serif",
+    "background": "#ffffff",
+    "surface": "#f6f7fb",
+    "text": "#171923",
+    "muted": "#656b7a",
+    "accent": "#635bff",
+    "radius": "12px",
+    "spacing": "16px"
+  }
+}
