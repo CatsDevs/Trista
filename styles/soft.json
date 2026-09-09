@@ -1,0 +1,14 @@
+{
+  "name": "Soft",
+  "description": "Rounded friendly preset",
+  "tokens": {
+    "font": "Inter, system-ui, sans-serif",
+    "background": "#f8f7ff",
+    "surface": "#ffffff",
+    "text": "#202033",
+    "muted": "#77758a",
+    "accent": "#8b7cff",
+    "radius": "20px",
+    "spacing": "18px"
+  }
+}
