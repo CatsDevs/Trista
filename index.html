@@ -1,73 +1,27 @@
 <!doctype html>
 <html lang="ru">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Trista — визуальный конструктор сайтов">
-  <title>Trista — Website Builder</title>
-  <link rel="stylesheet" href="style.css">
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="Trista — визуальный конструктор сайтов"><title>Trista — Website Builder</title>
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"><link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <header class="topbar">
-    <a class="brand" href="#">Trista</a>
-    <nav class="nav">
-      <button data-i18n="newProject">Новый проект</button>
-      <button data-i18n="preview">Предпросмотр</button>
-      <button class="icon-btn" id="themeBtn" aria-label="Theme">☾</button>
-      <button class="lang-btn" id="langBtn">EN</button>
-      <button class="icon-btn" id="settingsBtn" aria-label="Settings">⚙</button>
-    </nav>
-  </header>
-
-  <main class="hero">
-    <section class="hero-copy">
-      <span class="badge">0.1 · Seed</span>
-      <h1 data-i18n="title">Создавай сайты визуально</h1>
-      <p data-i18n="subtitle">Собирай элементы, соединяй действия в Blueprint и получай готовый сайт без сложного кода.</p>
-      <div class="actions">
-        <button class="primary" id="startBtn" data-i18n="start">Начать создавать</button>
-        <button class="secondary" id="demoBtn" data-i18n="demo">Посмотреть демо</button>
-      </div>
-    </section>
-
-    <section class="builder-preview" aria-label="Trista builder preview">
-      <div class="window-head"><span></span><span></span><span></span><b>Trista</b></div>
-      <div class="preview-layout">
-        <aside class="mini-panel">
-          <strong data-i18n="elements">Элементы</strong>
-          <div class="mini-item">T <span data-i18n="text">Текст</span></div>
-          <div class="mini-item">▣ <span data-i18n="button">Кнопка</span></div>
-          <div class="mini-item"># <span data-i18n="counter">Счётчик</span></div>
-          <div class="mini-item">□ <span data-i18n="container">Контейнер</span></div>
-        </aside>
-        <div class="canvas">
-          <div class="canvas-card">
-            <h3>Welcome</h3><p>Build something simple.</p>
-            <button class="demo-button">Click me</button>
-            <div class="counter">0</div>
-          </div>
-        </div>
-        <aside class="blueprint">
-          <strong>Blueprint</strong>
-          <div class="node event">Click</div><div class="connector"></div><div class="node action">Counter +1</div><div class="connector"></div><div class="node result">Update</div>
-        </aside>
-      </div>
-    </section>
-  </main>
-
-  <section class="features">
-    <article><span>🧩</span><h2 data-i18n="visual">Визуально</h2><p data-i18n="visualDesc">Добавляй элементы на страницу и настраивай их.</p></article>
-    <article><span>🔗</span><h2 data-i18n="blueprint">Blueprint</h2><p data-i18n="blueprintDesc">Соединяй события и действия блоками.</p></article>
-    <article><span>🎨</span><h2 data-i18n="styles">Стили</h2><p data-i18n="stylesDesc">Используй предустановленные стили и темы.</p></article>
-    <article><span>📦</span><h2 data-i18n="export">Экспорт</h2><p data-i18n="exportDesc">Получай обычный HTML, CSS и JS.</p></article>
-  </section>
-
-  <div class="settings" id="settingsPanel" hidden>
-    <h2 data-i18n="settings">Настройки Trista</h2>
-    <p data-i18n="settingsDesc">Это настройки самого Trista, а не создаваемого проекта.</p>
-    <button id="closeSettings" data-i18n="close">Закрыть</button>
-  </div>
-
-  <script src="script.js"></script>
-</body>
-</html>
+<header class="topbar"><a class="brand" href="#"><span class="brand-mark">T</span><span>Trista</span></a><nav class="nav">
+<button class="nav-link" data-i18n="newProject">Новый проект</button><button class="nav-link" data-i18n="preview">Предпросмотр</button><button class="icon-btn" id="themeBtn" aria-label="Theme">☾</button><button class="lang-btn" id="langBtn">EN</button><button class="icon-btn" id="settingsBtn" aria-label="Settings">⚙</button>
+</nav></header>
+<main>
+<section class="hero"><div class="hero-copy"><div class="eyebrow"><span class="status-dot"></span><span data-i18n="beta">Beta · 0.1 Seed</span></div><h1 data-i18n="title">Создавай сайты визуально</h1><p data-i18n="subtitle">Собирай элементы, соединяй действия в Blueprint и получай готовый сайт без сложного кода.</p><div class="actions"><button class="primary" id="startBtn" data-i18n="start">Начать создавать <span>→</span></button><button class="secondary" id="demoBtn" data-i18n="demo">Посмотреть демо</button></div><div class="hero-note"><span>✦</span><span data-i18n="local">Работает прямо в браузере · без сервера</span></div></div>
+<section class="builder-preview" aria-label="Trista builder preview"><div class="window-head"><div class="window-dots"><span></span><span></span><span></span></div><b>Trista <small>Builder</small></b><i>●</i></div><div class="preview-layout">
+<aside class="mini-panel"><strong data-i18n="elements">Элементы</strong><div class="mini-label" data-i18n="basic">Основные</div><div class="mini-item active">T <span data-i18n="text">Текст</span></div><div class="mini-item">▣ <span data-i18n="button">Кнопка</span></div><div class="mini-item"># <span data-i18n="counter">Счётчик</span></div><div class="mini-item">□ <span data-i18n="container">Контейнер</span></div></aside>
+<div class="canvas"><div class="canvas-toolbar"><span>Desktop</span><span>100%</span></div><div class="canvas-card"><div class="selection-tag">Text</div><h3>Welcome</h3><p>Build something simple.</p><button class="demo-button">Click me</button><div class="counter">0</div></div></div>
+<aside class="blueprint"><strong>Blueprint</strong><div class="bp-caption" data-i18n="logic">Логика</div><div class="node event">⚡ Click</div><div class="connector"></div><div class="node action">＋ Counter +1</div><div class="connector"></div><div class="node result">↻ Update</div></aside></div></section></section>
+<section class="section" id="stylesSection"><div class="section-heading"><div><span class="section-kicker">TRISTA</span><h2 data-i18n="stylesTitle">Предустановленные стили</h2></div><p data-i18n="stylesIntro">Готовые визуальные основы для проекта. Потом можно изменить всё вручную.</p></div><div class="style-grid">
+<article class="style-card minimal"><div class="style-preview"><span></span><b></b><i></i></div><div class="style-info"><h3>Minimal</h3><p data-i18n="minimalDesc">Чистый и нейтральный</p><button data-style="minimal" data-i18n="useStyle">Использовать</button></div></article>
+<article class="style-card soft"><div class="style-preview"><span></span><b></b><i></i></div><div class="style-info"><h3>Soft</h3><p data-i18n="softDesc">Мягкий и округлый</p><button data-style="soft" data-i18n="useStyle">Использовать</button></div></article>
+<article class="style-card contrast"><div class="style-preview"><span></span><b></b><i></i></div><div class="style-info"><h3>Contrast</h3><p data-i18n="contrastDesc">Яркий и выразительный</p><button data-style="contrast" data-i18n="useStyle">Использовать</button></div></article></div></section>
+<section class="features section"><article><span>✦</span><h2 data-i18n="visual">Визуально</h2><p data-i18n="visualDesc">Добавляй элементы на страницу и настраивай их.</p></article><article><span>⌁</span><h2 data-i18n="blueprint">Blueprint</h2><p data-i18n="blueprintDesc">Соединяй события и действия блоками.</p></article><article><span>◈</span><h2 data-i18n="styles">Стили</h2><p data-i18n="stylesDesc">Используй готовые пресеты или свои CSS-стили.</p></article><article><span>↓</span><h2 data-i18n="export">Экспорт</h2><p data-i18n="exportDesc">Получай обычный HTML, CSS и JS.</p></article></section>
+</main>
+<div class="toast" id="toast" hidden></div><div class="settings" id="settingsPanel" hidden><div class="settings-head"><div><span class="section-kicker">APP</span><h2 data-i18n="settings">Настройки Trista</h2></div><button id="closeSettings" class="close-btn">×</button></div><p data-i18n="settingsDesc">Это настройки самого Trista, а не создаваемого проекта.</p><div class="setting-row"><span data-i18n="appearance">Тема</span><button id="settingsTheme" class="small-action">Auto</button></div><div class="setting-row"><span data-i18n="language">Язык</span><button id="settingsLang" class="small-action">RU</button></div></div>
+<footer><span>Trista</span><span>0.1 · Seed</span><span>Client-side</span></footer><script src="script.js"></script>
+</body></html>
